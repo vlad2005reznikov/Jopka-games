@@ -1,0 +1,69 @@
+[gd_scene load_steps=10 format=3 uid="uid://ovfly1cq5bao"]
+
+[ext_resource type="AudioStream" uid="uid://cr7uedv4cbib4" path="res://Boris Brejcha - Be F.L.A.M.E (1).mp3" id="2_wxc1m"]
+[ext_resource type="Texture2D" uid="uid://bnnue710pptdc" path="res://backgrounds/4.jpg" id="5_c3eij"]
+[ext_resource type="Texture2D" uid="uid://bsac8ocri1o0v" path="res://Remove-bg.ai_1721430330847.png" id="6_dwr8w"]
+[ext_resource type="Texture2D" uid="uid://cmgou3fskg2sm" path="res://knopka-nastroyka.png" id="7_e58km"]
+[ext_resource type="Texture2D" uid="uid://cy2l4hh2u8bu2" path="res://knopka-vykhoda-gl.png" id="8_li5sh"]
+[ext_resource type="Script" path="res://exit.gd" id="9_hm8bc"]
+[ext_resource type="Texture2D" uid="uid://iwc6t6m0c8d3" path="res://mir.png" id="9_n6x1t"]
+[ext_resource type="Script" path="res://settngs.gd" id="10_dvs3j"]
+[ext_resource type="Script" path="res://bg.gd" id="12_1wj8q"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+script = ExtResource("12_1wj8q")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_wxc1m")
+volume_db = -13.0
+
+[node name="SiniyFon" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(235, 355)
+scale = Vector2(0.62, 0.62)
+texture = ExtResource("5_c3eij")
+
+[node name="Remove-bg_ai1721430330847" type="Sprite2D" parent="."]
+position = Vector2(238, 321.625)
+scale = Vector2(0.558, 0.763667)
+texture = ExtResource("6_dwr8w")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 628.0
+offset_right = 362.0
+offset_bottom = 789.0
+scale = Vector2(0.55, 0.55)
+texture_normal = ExtResource("9_n6x1t")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 628.0
+offset_right = 168.0
+offset_bottom = 789.0
+scale = Vector2(0.55, 0.55)
+texture_normal = ExtResource("8_li5sh")
+script = ExtResource("9_hm8bc")
+
+[node name="TextureButton3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 388.0
+offset_top = 627.0
+offset_right = 550.0
+offset_bottom = 788.0
+scale = Vector2(0.55, 0.55)
+texture_normal = ExtResource("7_e58km")
+script = ExtResource("10_dvs3j")
+
+[connection signal="pressed" from="TextureButton2" to="TextureButton2" method="_on_pressed"]
+[connection signal="pressed" from="TextureButton3" to="TextureButton3" method="_on_pressed"]

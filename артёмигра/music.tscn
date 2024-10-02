@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctk0pdpsfowl2"]
+
+[ext_resource type="AudioStream" uid="uid://cr7uedv4cbib4" path="res://Boris Brejcha - Be F.L.A.M.E (1).mp3" id="1_pfum7"]
+
+[node name="Music" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_pfum7")
+volume_db = -12.071
+autoplay = true

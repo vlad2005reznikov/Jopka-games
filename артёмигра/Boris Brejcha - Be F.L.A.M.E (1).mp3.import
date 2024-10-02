@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cr7uedv4cbib4"
+path="res://.godot/imported/Boris Brejcha - Be F.L.A.M.E (1).mp3-c4d1a5867a150f432b41627839ce6899.mp3str"
+
+[deps]
+
+source_file="res://Boris Brejcha - Be F.L.A.M.E (1).mp3"
+dest_files=["res://.godot/imported/Boris Brejcha - Be F.L.A.M.E (1).mp3-c4d1a5867a150f432b41627839ce6899.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
